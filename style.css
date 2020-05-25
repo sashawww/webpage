@@ -1,5 +1,261 @@
-.body{
-	background-color: black;
-	width:100%;
-	height: 1330px;
+/*font-family: 'Merriweather', serif;
+font-family:
+'Montserrat', sans-serif;
+font-family:
+'Roboto', sans-serif;*/
+
+/*Body stylesheet*/
+body {
+    color: #B7B7B7;
+    font-family: 'Montserrat', serif;
+    font-weight: 300;
+    font-size: 15px;
+    margin: 0;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration-line: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/*   Header  w-621,12  */
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 57px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*  Navigation  */
+.nav {
+    font-size: 13px;
+    font-family:
+        'Roboto', sans-serif;
+}
+
+.nav__item {
+    color: #989696;
+    margin-left: 50px;
+    vertical-align: middle;
+    transition: color .3s;
+}
+
+.nav__item:first-child {
+    margin-left: 0;
+}
+
+.nav__item:hover {
+    color: black;
+}
+
+/* Intro */
+.intro {
+    height: 944px;
+    padding-top: 57px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.intro__title {
+    margin: 0;
+    font-size: 44px;
+    color: black;
+    font-weight: 100;
+    letter-spacing: 0.2px;
+    line-height: 1.1;
+}
+
+.intro__subtitle {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #898888;
+    margin-bottom: 45px;
+}
+
+.btn {
+    display: inline-block;
+    font-family:
+        'Montserrat', sans-serif;
+    vertical-align: top;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 20px 50px;
+    color: #000000;
+    border: 1px solid #000000;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 500px;
+}
+
+.intro__goDown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10px;
+    height: 54px;
+    margin: 0 auto;
+}
+
+.img__item:hover {
+    transform: scale(1.5);
+}
+
+/*................... About us .........................*/
+.aboutus {
+    background-color: #1d1d1d;
+    margin: 0;
+    font-family: "Droid Sans", sans-serif;
+    min-height: 100vh;
+}
+.aboutus:before{
+     content: "";
+     position: fixed;
+     top: 0px;
+     left: 50%;
+     bottom: 0px;
+     transform: translateX(-50%);
+     width: 4px;
+     background-color: #fff;
+}
+.aboutus__timeline{
+    width: calc(100% - 80px);
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    left: -5px;
+}
+.aboutus .aboutus__timeline .aboutus__post{
+    width: calc(50% - 80px);
+     float: left;
+     padding: 20px;
+     clear: both;
+     text-align: right;
+}
+.aboutus .aboutus__timeline .aboutus__post:not(:first-child{
+    margin-top:-60px;
+}
+.aboutus .aboutus__timeline .aboutus__post .post__time{
+    font-size: 32px;
+    margin-bottom: 12px;
+    position: relative;
+    color: #fff;
+}
+.aboutus .aboutus__timeline .aboutus__post .post__time:before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 4px solid #fff;
+    background-color: #1d1d1d;
+    border-radius: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -73px;
+    z-index: 1000;
+}
+.aboutus .aboutus__timeline .aboutus__post .post__time .big:before{
+    width: 24px;
+     height: 24px;
+     transform: translate(8px, -50%);
+}
+.aboutus .about__timeline aboutus__post aboutus {
+     color: #aaa;
+}
+ .aboutus .about__timeline aboutus__post aboutus p {
+     line-height: 1.4em;
+}
+.aboutus .about__timeline aboutus__post:nth-child(2n) {
+     text-align: left;
+     float: right;
+}
+.aboutus .about__timeline aboutus__post :nth-child(2n) .post__time:before {
+     left: -63px;
+}
+.aboutus .about__timeline aboutus__post:nth-child(2n) .post__time .big:before {
+     transform: translate(-8px, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ........................... Team ....................*/
+.team {
+    max-width: 1920px;
+    height: 764, 74px;
+    background-color: white;
+}
+
+.team__intro {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.team__intro_title {
+    margin: 0;
+    font-size: 34px;
+    color: black;
+    font-weight: 100;
+    letter-spacing: 0.2px;
+    line-height: 1.1;
+}
+
+.team__intro_subtitle {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #898888;
 }
